@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Task } from "./components/task";
+import { AddArea } from "./components/addArea";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [item, setItem] = useState([
+        { id: 1, task: "Fazer compras.", done: false },
+        { id: 2, task: "Fazer tarefa.", done: false },
+    ]);
+
+    function addTask(newTask) {
+        let newList = [...item];
+        newList.push({
+            id: item.length + 1,
+            task: newTask,
+            done: false,
+        });
+
+        setItem(newList);
+    }
+
+    return (
+        <div className="App">
+            <AddArea onEnter={addTask} />
+            {item.map((todo, index) => (
+                <Task key={index.id} check={todo.done} item={todo.task} />
+            ))}
+        </div>
+    );
 }
 
 export default App;
