@@ -1,0 +1,25 @@
+.container-task {
+    width: 80%;
+    min-width: 300px;
+    height: 40px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 10px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.inputCheck {
+    width: 20px;
+    height: 20px;
+}
+
+.textList {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
