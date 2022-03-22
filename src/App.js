@@ -1,20 +1,16 @@
 import { useState } from "react";
-import { Task } from "./components/task";
 import { AddArea } from "./components/addArea";
 import "./App.css";
 
 function App() {
-    const [item, setItem] = useState([
-        { id: 1, task: "Fazer compras.", done: false },
-        { id: 2, task: "Fazer tarefa.", done: false },
-    ]);
+    const [item, setItem] = useState([]);
+
+    let newList = [...item];
 
     function addTask(newTask) {
-        let newList = [...item];
         newList.push({
             id: item.length + 1,
             task: newTask,
-            done: false,
         });
 
         setItem(newList);
@@ -24,7 +20,17 @@ function App() {
         <div className="App">
             <AddArea onEnter={addTask} />
             {item.map((todo, index) => (
-                <Task key={index.id} check={todo.done} item={todo.task} />
+                <div className="container-task" key={index}>
+                    <input
+                        value={false}
+                        type="checkbox"
+                        className="inputCheck"
+                        id={index}
+                    />
+                    <label className="textList" from={index}>
+                        {todo.task}
+                    </label>
+                </div>
             ))}
         </div>
     );
