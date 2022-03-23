@@ -9,7 +9,7 @@ export function ListAdd({ item, onChange, co }) {
                 checked={item.done}
                 onChange={(e) => onChange(item.id, e.target.checked)}
             />
-            <label
+            <p
                 className="textList"
                 style={{
                     color: co === true ? "red" : "#ffffff",
@@ -17,7 +17,7 @@ export function ListAdd({ item, onChange, co }) {
                 }}
             >
                 {item.task}
-            </label>
+            </p>
         </div>
     );
 }
