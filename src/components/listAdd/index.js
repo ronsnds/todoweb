@@ -12,7 +12,7 @@ export function ListAdd({ item, onChange, co }) {
             <label
                 className="textList"
                 style={{
-                    color: co === true ? "red" : "black",
+                    color: co === true ? "red" : "#ffffff",
                     textDecoration: co === true ? "line-through" : "none",
                 }}
             >

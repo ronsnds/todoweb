@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./addArea.css";
+import "./style.css";
 
 export function AddArea({ onEnter }) {
     const [addItem, setAddItem] = useState("");

@@ -28,6 +28,7 @@ function App() {
 
     return (
         <div className="App">
+            <h1>TodoWeb</h1>
             <AddArea onEnter={addTask} />
             {itemtask.map((todo, index) => (
                 <ListAdd

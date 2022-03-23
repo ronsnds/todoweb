@@ -3,7 +3,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 80%;
-    height: 60px;
+    height: 50px;
     min-width: 300px;
     padding: 0 20px;
     border-bottom: 1px solid #ffffff;
@@ -12,9 +12,9 @@
 }
 
 .plus {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 500;
     color: #ffffff;
 }
 
@@ -23,9 +23,9 @@
     height: 100%;
     background: none;
     border: none;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
 }
 
@@ -34,8 +34,8 @@
 }
 
 .input-addArea::placeholder {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: #c7c7c7;
 }
