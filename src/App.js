@@ -4,7 +4,6 @@ import "./App.css";
 import { ListAdd } from "./components/listAdd";
 
 function App() {
-    const [color, setColor] = useState("black");
     const [itemtask, setItem] = useState([]);
 
     function addTask(newTask) {
@@ -25,20 +24,6 @@ function App() {
             }
         }
         setItem(newList);
-        update();
-    }
-
-    function update(id) {
-        for (let i in itemtask) {
-            if (itemtask[i].done === false && itemtask[i].id != id) {
-                console.log(
-                    itemtask[i].done === false && itemtask[i].id === id
-                );
-                setColor("red");
-            } else {
-                setColor("black");
-            }
-        }
     }
 
     return (
@@ -49,7 +34,7 @@ function App() {
                     key={index}
                     item={todo}
                     onChange={handleTaskChange}
-                    co={color}
+                    co={todo.done}
                 />
             ))}
         </div>
