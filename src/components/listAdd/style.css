@@ -13,8 +13,8 @@
 }
 
 .inputCheck {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .textList {
@@ -24,4 +24,18 @@
     color: #ffffff;
     width: 100%;
     text-align: justify;
+}
+
+.clean {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #aa1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.2);
 }

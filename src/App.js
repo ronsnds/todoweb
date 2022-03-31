@@ -35,7 +35,6 @@ function App() {
                     key={index}
                     item={todo}
                     onChange={handleTaskChange}
-                    co={todo.done}
                 />
             ))}
         </div>

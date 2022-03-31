@@ -1,6 +1,6 @@
 import "./style.css";
 
-export function ListAdd({ item, onChange, co }) {
+export function ListAdd({ item, onChange, onClick }) {
     return (
         <div className="container-task" done={item.toString()}>
             <input
@@ -12,8 +12,9 @@ export function ListAdd({ item, onChange, co }) {
             <p
                 className="textList"
                 style={{
-                    color: co === true ? "red" : "#ffffff",
-                    textDecoration: co === true ? "line-through" : "none",
+                    color: item.done === true ? "red" : "#ffffff",
+                    textDecoration:
+                        item.done === true ? "line-through" : "none",
                 }}
             >
                 {item.task}
