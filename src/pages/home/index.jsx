@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { AddArea } from "./components/addArea";
+import { AddArea } from "../../components/addArea";
 import "./style.css";
-import { ListAdd } from "./components/listAdd";
+import { ListAdd } from "../../components/listAdd";
 
 function Home() {
   const [itemtask, setItem] = useState([]);
