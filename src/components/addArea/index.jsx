@@ -17,11 +17,10 @@ export function AddArea({ onEnter }) {
             <input
                 type="text"
                 className="input-addArea"
-                placeholder="Add your task...  (max 80)"
+                placeholder="Adicionar tarefa..."
                 value={addItem}
                 onChange={(e) => setAddItem(e.target.value)}
                 onKeyUp={keyUp}
-                maxLength={80}
             />
         </div>
     );
