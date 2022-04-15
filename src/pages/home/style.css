@@ -1,16 +1,15 @@
 .home {
-  background-color: darkslategrey;
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-color: #2f4f4f;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  margin-top: 20px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
 }
