@@ -17,6 +17,10 @@
     color: #ffffff;
 }
 
+label {
+    display: none;
+}
+
 .input-addArea {
     width: 100%;
     height: 100%;

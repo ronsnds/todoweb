@@ -14,8 +14,10 @@ export function AddArea({ onEnter }) {
     return (
         <div className="container">
             <p className="plus">+</p>
+            <label for="text">Adicionar tarefa</label>
             <input
                 type="text"
+                id="text"
                 className="input-addArea"
                 placeholder="Adicionar tarefa..."
                 value={addItem}
