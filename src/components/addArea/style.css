@@ -12,8 +12,7 @@
 }
 
 .plus {
-    font-family: "Poppins", sans-serif;
-    font-size: 45px;
+    font-size: 2.5em;
     font-weight: 500;
     color: #ffffff;
 }
@@ -23,8 +22,7 @@
     height: 100%;
     background: none;
     border: none;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
 }
@@ -34,8 +32,7 @@
 }
 
 .input-addArea::placeholder {
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     color: #c7c7c7;
 }
