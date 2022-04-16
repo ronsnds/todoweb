@@ -7,13 +7,12 @@ function Home() {
     const [itemtask, setItem] = useState([]);
 
     function addTask(newTask) {
-        let newList = [...itemtask];
-        newList.push({
+        const newList = {
             id: itemtask.length + 1,
             task: newTask,
             done: false,
-        });
-        setItem(newList);
+        };
+        setItem((prevState) => [...prevState, newList]);
     }
 
     function handleTaskChange(id, done) {
@@ -26,12 +25,22 @@ function Home() {
         setItem(newList);
     }
 
+    function removeTask(index) {
+        let filtered = itemtask.filter((i) => i.id !== index);
+        setItem(filtered);
+    }
+
     return (
         <div className="home">
             <h1>TodoWeb</h1>
             <AddArea onEnter={addTask} />
             {itemtask.map((todo, index) => (
-                <ListAdd key={index} item={todo} onChange={handleTaskChange} />
+                <ListAdd
+                    key={index}
+                    item={todo}
+                    onChange={handleTaskChange}
+                    onClick={() => removeTask(todo.id)}
+                />
             ))}
         </div>
     );

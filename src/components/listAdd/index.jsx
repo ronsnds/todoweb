@@ -19,6 +19,7 @@ export function ListAdd({ item, onChange, onClick }) {
             >
                 {item.task}
             </p>
+            <button onClick={onClick} className="buttonDelete">X</button>
         </div>
     );
 }
