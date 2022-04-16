@@ -1,10 +1,11 @@
 .home {
     background-color: #2f4f4f;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 h1 {
