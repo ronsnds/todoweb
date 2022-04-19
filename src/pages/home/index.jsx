@@ -8,7 +8,7 @@ function Home() {
 
     function addTask(newTask) {
         const newList = {
-            id: itemtask.length + 1,
+            id: new Date(),
             task: newTask,
             done: false,
         };
