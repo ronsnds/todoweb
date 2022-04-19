@@ -37,8 +37,11 @@ function Home() {
             {itemtask.map((todo, index) => (
                 <ListAdd
                     key={index}
-                    item={todo}
-                    onChange={handleTaskChange}
+                    done={todo.done}
+                    task={todo.task}
+                    onChange={(e) =>
+                        handleTaskChange(todo.id, e.target.checked)
+                    }
                     onClick={() => removeTask(todo.id)}
                 />
             ))}
