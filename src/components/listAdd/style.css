@@ -1,61 +1,61 @@
 .container-task {
-    width: 80%;
-    min-width: 300px;
-    min-height: 50px;
-    background-color: #2d8f66;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    padding: 15px 20px;
-    border-radius: 8px;
-    gap: 20px;
+  width: 80%;
+  min-width: 300px;
+  min-height: 50px;
+  background-color: #2d8f66;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  gap: 20px;
 }
 
 .inputCheck {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .textList {
-    width: 90%;
-    font-weight: 300;
-    font-size: 1rem;
-    color: #ffffff;
-    word-wrap: break-word;
+  width: 90%;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #ffffff;
+  word-wrap: break-word;
 }
 
 .clean {
-    font-weight: 700;
-    font-size: 1rem;
-    color: #aa1c1c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: rgb(255, 255, 255, 0.2);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #aa1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(255, 255, 255, 0.2);
 }
 
 .buttonDelete {
-    background: none;
-    color: #ffffff;
-    font-size: 1rem;
-    border: 2px solid #ffffff;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    font-weight: 900;
+  background: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border: 2px solid #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: 900;
 }
 
 .buttonDelete:hover {
-    color: #aa1c1c;
-    border: 2px solid #aa1c1c;
+  color: #aa1c1c;
+  border: 2px solid #aa1c1c;
 }
 
 @media (max-width: 700px) {
-    .textList {
-        width: 60%;
-    }
+  .textList {
+    width: 60%;
+  }
 }
