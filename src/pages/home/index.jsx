@@ -12,7 +12,7 @@ function Home() {
       task: newTask,
       done: false,
     };
-    setItemTask((prevState) => [...prevState, newList]);
+    setItemTask(prevState => [...prevState, newList]);
   }
 
   function handleTaskChange(id, done) {
@@ -26,7 +26,7 @@ function Home() {
   }
 
   function removeTask(index) {
-    let filtered = itemTask.filter((i) => i.id !== index);
+    let filtered = itemTask.filter(i => i.id !== index);
     setItemTask(filtered);
   }
 
@@ -39,7 +39,7 @@ function Home() {
           key={index}
           done={todo.done}
           task={todo.task}
-          onChange={(e) => handleTaskChange(todo.id, e.target.checked)}
+          onChange={e => handleTaskChange(todo.id, e.target.checked)}
           onClick={() => removeTask(todo.id)}
         />
       ))}
