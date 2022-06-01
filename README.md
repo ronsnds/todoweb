@@ -1,6 +1,6 @@
 # TODOWEB
 
-<img src="background.png" alt="TODOWEB" />
+<img src="background.jpeg" alt="TODOWEB" />
 
 ## Tecnologias
 
