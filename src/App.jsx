@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { AddArea } from "../../components/addArea";
-import "./style.css";
-import { ListAdd } from "../../components/listAdd";
+import "./App.css";
+import { AddArea } from "./components/addArea";
+import { ListAdd } from "./components/listAdd";
 
-function Home() {
+function App() {
   const [itemTask, setItemTask] = useState([]);
 
   function addTask(newTask) {
@@ -47,4 +47,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default App;
